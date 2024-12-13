@@ -1,0 +1,70 @@
+/* Estilos existentes */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(14, 40px);
+    grid-template-rows: repeat(14, 40px);
+    gap:0;
+    border: 4px solid purple; /* Borde exterior de la cuadrícula en color morado */
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid pink; /* Borde interior de las celdas en color rosa */
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgb(135, 214, 240);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: deepskyblue;
+}
+
+#titulo {
+    color: #4682B4; /* Azul claro más oscuro */
+    font-size: 28px; /* Letras más grandes */
+    font-weight: bold; /* Letras más gruesas */
+    margin-bottom: 20px;
+}
+
+/* Estilos adicionales */
+.seleccionada {
+    background-color: #8ab5e6;
+}
+
+.correcta {
+    background-color: #55efc4;
+    color: white;
+    text-decoration: line-through;
+}
+#mensajeVictoria {
+    color: #4682B4; /* Mismo color azul claro más oscuro */
+    font-size: 28px; /* Mismo tamaño de letra */
+    font-weight: bold; /* Mismo grosor de letra */
+    margin-top: 20px;
+}
+
